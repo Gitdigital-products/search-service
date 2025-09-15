@@ -1,0 +1,7 @@
+# Index a profile
+curl -X POST http://localhost:4600/index \
+  -H "Content-Type: application/json" \
+  -d '{"id":"","content":"Rick K - rick@example.com","source":"profile"}'
+
+# Search for "rick"
+curl http://localhost:4600/search/rick
